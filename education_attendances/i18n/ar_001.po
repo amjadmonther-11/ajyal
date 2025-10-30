@@ -1,0 +1,352 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* education_attendances
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20200303\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-16 08:32+0000\n"
+"PO-Revision-Date: 2021-08-16 08:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_attendances
+#: model:ir.model.fields.selection,name:education_attendances.selection__education_attendance_line__state__absence
+msgid "Absence"
+msgstr "غياب"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__academic_year
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__academic_year
+msgid "Academic Year"
+msgstr "السنه الدراسيه"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__present_afternoon
+msgid "After Noon"
+msgstr "الفترة المسائية"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__all_marked_afternoon
+msgid "All students are present in the afternoon"
+msgstr "جميع الطلاب حاضرين في فترة ما بعد الظهر"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__all_marked_morning
+msgid "All students are present in the morning"
+msgstr "جميع الطلاب حاضرين في فترة الصباحية"
+
+#. module: education_attendances
+#: model:ir.actions.act_window,name:education_attendances.act_attendance_view
+#: model:ir.ui.menu,name:education_attendances.student_attendance_main_menu
+#: model:ir.ui.menu,name:education_attendances.student_attendance_root_menu
+#: model:ir.ui.menu,name:education_attendances.student_attendance_sub_menu
+#: model_terms:ir.ui.view,arch_db:education_attendances.class_smart_button_attendance_form
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_smart_button_attendance_form
+msgid "Attendance"
+msgstr "الحضور"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__attendance_created
+msgid "Attendance Created"
+msgstr "إنشاء الحضور"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__attendance_id
+msgid "Attendance Id"
+msgstr "المعرف"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__attendance_line
+msgid "Attendance Line"
+msgstr ""
+
+#. module: education_attendances
+#: model:ir.actions.act_window,name:education_attendances.act_attendance_report_view
+msgid "Attendance Report"
+msgstr "تقرير الحضور"
+
+#. module: education_attendances
+#: model:ir.actions.act_window,name:education_attendances.view_class_wise_attendance
+msgid "Attendance Report Class"
+msgstr "تقرير حضور الفصل"
+
+#. module: education_attendances
+#: model:ir.actions.act_window,name:education_attendances.view_attendance_students
+msgid "Attendance Report Student"
+msgstr "تقرير حضور الطالب"
+
+#. module: education_attendances
+#: code:addons/education_attendances/models/students_attendance.py:0
+#, python-format
+msgid "Attendance register of %s is already created on \"%s\""
+msgstr "Attendance register of %s is already created on \"%s\""
+
+#. module: education_attendances
+#: model:ir.model.fields.selection,name:education_attendances.selection__education_attendance_line__state__attending
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_form
+msgid "Attending"
+msgstr "حضور"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__class_id
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__class_id
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_search
+msgid "Class"
+msgstr "الصف"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__company_id
+msgid "Company"
+msgstr ""
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_form
+msgid "Create Attendance Table"
+msgstr "إنشاء جدول الحضور"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__create_uid
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__create_date
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_search
+msgid "Current Academic Year"
+msgstr "العام الدراسي الحالي"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__date
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_search
+msgid "Day"
+msgstr "اليوم"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__display_name
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__division_id
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__division_id
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_search
+msgid "Division"
+msgstr "الصف"
+
+#. module: education_attendances
+#: model:ir.model.fields.selection,name:education_attendances.selection__education_attendance__state__done
+#: model:ir.model.fields.selection,name:education_attendances.selection__education_attendance_line__state__done
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_form
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_search
+msgid "Done"
+msgstr "منتهي"
+
+#. module: education_attendances
+#: model:ir.model.fields.selection,name:education_attendances.selection__education_attendance__state__draft
+#: model:ir.model.fields.selection,name:education_attendances.selection__education_attendance_line__state__draft
+msgid "Draft"
+msgstr "مسوده"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__faculty_id
+msgid "Faculty"
+msgstr "الأستاذ"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__full_day_absent
+msgid "Full Day"
+msgstr "يوم كامل"
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_search
+msgid "Group By"
+msgstr ""
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__half_day_absent
+msgid "Half Day"
+msgstr "نصف يوم"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__id
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__id
+msgid "ID"
+msgstr "رقم التعريف"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance____last_update
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__write_uid
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__write_date
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_form
+msgid "Leave Status (✔️️ = Present)"
+msgstr "حالة (✔️️ = حاضر)"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__present_morning
+msgid "Morning"
+msgstr "الصباح"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__name
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__name
+msgid "Name"
+msgstr "الإسم"
+
+#. module: education_attendances
+#: model:ir.ui.menu,name:education_attendances.student_attendance_report
+msgid "Report"
+msgstr "تقرير"
+
+#. module: education_attendances
+#: model:ir.ui.menu,name:education_attendances.student_attendance_report_main
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__company_id
+msgid "School"
+msgstr "المدرسه"
+
+#. module: education_attendances
+#: model:ir.model.fields,help:education_attendances.field_education_attendance_line__academic_year
+msgid "Select the Academic Year"
+msgstr "إختر السنه الدراسبه"
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_form
+msgid "Set to Draft"
+msgstr "إعاده إلي مسوده"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance__state
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__state
+msgid "Status"
+msgstr "الحاله"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__student_id
+msgid "Student"
+msgstr "الطالب"
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_form
+msgid "Student Details"
+msgstr "تفاصيل الطالب"
+
+#. module: education_attendances
+#: model:ir.model.fields,field_description:education_attendances.field_education_attendance_line__student_name
+msgid "Student name"
+msgstr "إسم الطالب"
+
+#. module: education_attendances
+#. openerp-web
+#: code:addons/education_attendances/static/src/js/attendance_dashboard.js:0
+#, python-format
+msgid "Students Attendance"
+msgstr "حضور الطلاب"
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_search
+msgid "Students Attendants"
+msgstr "حضور الطلاب"
+
+#. module: education_attendances
+#: code:addons/education_attendances/models/students_attendance.py:0
+#, python-format
+msgid "There are no students in this Division"
+msgstr "لا يوجد طلاب في هذا الفصل"
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_search
+msgid "Today"
+msgstr "اليوم"
+
+#. module: education_attendances
+#. openerp-web
+#: code:addons/education_attendances/static/src/xml/attendance_dashboard.xml:0
+#, python-format
+msgid "Total Absence"
+msgstr "عدد الحاضرين"
+
+#. module: education_attendances
+#. openerp-web
+#: code:addons/education_attendances/static/src/xml/attendance_dashboard.xml:0
+#, python-format
+msgid "Total Students"
+msgstr "عدد الطلاب"
+
+#. module: education_attendances
+#. openerp-web
+#: code:addons/education_attendances/static/src/xml/attendance_dashboard.xml:0
+#, python-format
+msgid "Total attendance"
+msgstr "إجمالي الحضور"
+
+#. module: education_attendances
+#. openerp-web
+#: code:addons/education_attendances/static/src/xml/attendance_dashboard.xml:0
+#, python-format
+msgid "View Attendances"
+msgstr "عرض  قائمة الحضور"
+
+#. module: education_attendances
+#: model_terms:ir.ui.view,arch_db:education_attendances.student_attendance_form
+msgid "absence"
+msgstr "غياب"
+
+#. module: education_attendances
+#: model:ir.model,name:education_attendances.model_education_attendance
+msgid "education.attendance"
+msgstr ""
+
+#. module: education_attendances
+#: model:ir.model,name:education_attendances.model_education_attendance_line
+msgid "education.attendance.line"
+msgstr ""
+
+#. module: education_attendances
+#. openerp-web
+#: code:addons/education_attendances/static/src/xml/attendance_dashboard.xml:0
+#, python-format
+msgid "غياب و حضور التلاميذ ليوم"
+msgstr "غياب و حضور التلاميذ ليوم"

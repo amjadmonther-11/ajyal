@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="attendance_action_dashboard" model="ir.actions.client">
+            <field name="name">Dashboard</field>
+            <field name="tag">attendance_dashboard</field>
+        </record>
+
+        <menuitem id="menu_attendance_dashboard"
+                  name="Dashboard"
+                  action="attendance_action_dashboard"
+                  parent="student_attendance_root_menu"
+                  sequence="-1"/>
+    </data>
+    <!-- <template id="assets_backend" name="Fee Dashboard assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+
+            <script type="text/javascript" src="/education_attendances/static/src/js/attendance_dashboard.js"/>
+
+            <link rel="stylesheet" href="/education_attendances/static/src/css/attendance_dashboard.css"/>
+        </xpath>
+    </template> -->
+</odoo>
