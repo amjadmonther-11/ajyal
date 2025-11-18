@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <data>
+
+    <template id="report_timetable_template">
+
+    <t t-call="web.html_container">
+
+        <t t-foreach="docs" t-as="o">
+
+
+                <div class="page">
+
+                     <style >
+                          .container{
+                           text-align: center;
+                          }
+                         .block{
+                           display:inline-block;
+                         }
+                        table {
+                              border-collapse: collapse;
+                              width: 100%;
+                          }
+                          td, th { 
+                             text-align: center; 
+                             border: 1px solid #adafa2; 
+                             padding:2px 5px;
+                             white-space: nowrap;
+                          }
+                          td{
+                            font: normal  16px/20px Georgia, sans-serif;
+                          }
+                            th { 
+                              background-color:#adafa2;
+                              font: normal bold 16px/20px Georgia, sans-serif;
+                            }
+                          .stud_table{
+                              border-spacing: 1px;
+                              border-collapse:separate;
+                              padding: 10px;
+                              
+                          } 
+                          .division_table{
+                              border-spacing: 1px;
+                              border-collapse:separate;
+                              padding: 10px;
+                              
+                          } 
+                          .caption {
+                              margin: 0; 
+                              background: #302f33;
+                              border: 1px solid #302f33;
+                              color: white;
+                              border-top-left-radius:30px !important;
+                              border-top-right-radius:30px !important;
+                              width: 400px;
+                              height: 30px;
+                              font: normal bold 16px/20px Georgia, sans-serif;;
+                              margin: 0 auto;
+                              border-bottom: 5px solid #302f33;
+                              padding-top: 5px;
+                            
+                             
+                           }
+                          
+                          thead tr:first-child th:first-child{
+                              border: 1px solid #adafa2;
+                              border-top-right-radius:6px !important;
+                          }
+                          thead tr:first-child th:last-child{
+                              border: 1px solid #adafa2;
+                              border-top-left-radius:6px !important;
+                          }
+                          tbody tr:last-child td:first-child{
+                              border: 2px solid #adafa2; 
+                              border-bottom-right-radius:6px !important;
+                              border-bottom-left-radius:6px !important;
+                          }
+                          #institute{
+                            background: #302f33;
+                            border-radius:20px !important;
+                            color: white;
+                            width: 400px;
+                            height: 40px;
+                          }
+                          #school{
+                           background: #adafa2;
+                           border-radius:20px !important;
+                           margin-top:0px;
+                          }
+                          .result{
+                            border: 3px solid #302f33;
+                            border-top-left-radius:6px !important;
+                            border-top-right-radius:6px !important;
+                            margin: 0 auto;
+                            border-bottom-width: 12px;
+                            border-left-width: thick;
+                            border-right-width: thick;
+                            width: 80%;
+                          }
+                          .details{
+                            background: #302f33;
+                            margin-top: 0px;
+                            padding-bottom:3px;
+
+                            
+                          }
+                          .details div{
+                            background: white;
+                            display:inline-block;
+                            border-radius:8px !important;
+                          }
+                          .details div{
+                           font: normal bold 16px/20px Georgia, sans-serif;
+                          }
+                          .details.content { 
+                              white-space: nowrap;
+                           }
+                           .about{
+                              margin: 10px;
+                              padding: 5px;
+                              height: 130px;
+                              border: 1px dashed black;
+                              border-radius:6px;
+                              font: normal bold 16px/20px Georgia, sans-serif;
+                           }
+                             .nots{
+                             border: 1px solid black;
+                             border-radius:8px !important;
+                             height: 25px;
+                             text-align: right;
+                             padding-right: 10px;
+                             padding-top: 2px;
+                           }
+                           .div22{
+                             text-align: center;
+                             display:inline-block;
+                             width: 220px;
+                             height: 90px;
+                             padding-top: 40px;
+                             float: left;
+                             margin-top: 4px;
+                             border: 1px dashed black;
+                             border-radius:70px;
+                           }
+                           .div21{
+                              display:inline-block;
+                              width:405px;
+                              text-align: right;
+                              padding-top: 5px;
+                              dirction: rtl;
+                              float: right;
+
+                           }
+                           .div212{
+                             border: 1px solid black;
+                             border-radius:8px !important;
+                             height: 26px;
+                             width: 98%;
+                             margin-top: 4px;
+                             dirction: rtl;
+                             font-size: 14px;
+                             padding: 0.5px;
+                             text-align: center;
+                             padding-top: 4px;
+
+                           }
+                           
+                          
+                           .div21111{
+                             border: 1px solid black;
+                             border-radius:8px !important;
+                             display:inline-block;
+                             height: 26px;
+                             width:250px;
+                             padding-right: 4px;
+                             dirction: rtl;
+                             text-align: right;
+                             padding-top: 4px;
+                           }
+                           .div21112{
+                             border: 1px solid black;
+                             border-radius:8px !important;
+                             display:inline-block;
+                             height: 26px;
+                             width:250px;
+                             padding-right: 3px;
+                             margin-top: 2px;
+                             dirction: rtl;
+                             text-align: right;
+                             padding-top: 4px;
+                             
+                           }
+                           .div2112{
+                            padding-top: 2px;
+                           }
+                           .div21121{
+                             border: 1px solid black;
+                             border-radius:8px !important;
+                             display:inline-block;
+                             height: 26px;
+                             width:140px;
+                             padding-top: 4px;
+                           }
+                           .div21122{
+                             border: 1px solid black;
+                             border-radius:8px !important;
+                             height: 26px;
+                             width:140px;
+                             display:inline-block;
+                             margin-top: 2px;
+                             padding-top: 4px;
+                           }
+                           .all{
+                            padding-top: 8px;
+                            padding-bottom: 8px;
+                           }
+                           .all span{
+                             border: 5px solid #302f33;background:#302f33;color: white;border-radius:15px !important;
+                              min-width: 20em;
+                           }
+                           .row{
+                              width: 80%;
+                              margin: 0 auto;
+                           }
+                     
+                            .subject{
+                               width:100%;
+                               heihgt:100px;
+                            }
+                            .subject span{
+                            margin-right: 15px;
+                            
+                            }
+                            <!-- .sup{
+                               float: right;
+                               margin-top: -5px;
+                               margin-right:50px;
+                              }
+
+                              .inf{
+                                float: right;
+                                margin-left: 80px;
+                                margin-top: -20px;
+                              } -->
+                             
+
+
+          
+
+
+                      </style>
+
+                       <div class="oe_structure"/>
+
+
+                    <div class="container">
+
+                          <div class="row">
+                              <div  class="block" style="float: right;">
+                                 <img width="80px;" height="80px;" t-if="docs.company_id.logo" t-attf-src="data:image/png;base64,#{docs.company_id.logo}" />
+                             </div>
+                             <div class="block">
+                                  <span>بسم اللَه الرحمن الرحيم</span><br/>
+                                  
+                                  <div class="text-center" id="institute">
+                                    <h1><t t-esc="docs.company_id.parent_id.name"/></h1>
+                                  </div><br/>
+                                  <div class="text-center" id="school" >
+                                     <h2 ><t t-esc="docs.company_id.name"/></h2>
+                                 </div>
+                              </div>
+                             <div class="block" style="float:left;">
+                                 <img width="80px;" height="80px;" t-if="docs.company_id.logo" t-attf-src="data:image/png;base64,#{docs.company_id.logo}" />
+                          </div>
+                          
+                          </div>
+                  </div>
+                  <br/>
+                   <div class="row" >
+                                <center>
+                                    <div class="col-xs-12">
+                                        <strong><span t-esc="docs.class_division.name"/> Time Table</strong>
+                                        
+                                    </div>
+
+                                </center>
+                            </div>
+                  
+                   <table class="division_table">
+                          <thead>
+                              <tr>
+                             
+                             <th>
+                              <table style="width: 50px;height:50px;">
+                                <tr>
+                                  <th >
+                           <span class="sup">الحصص</span></th>
+                           
+                            <th class="rotate"><span class="inf">الايام</span></th>
+                          </tr>
+                        </table>
+                          </th>
+                              
+                                <th class="text-center top">First Period</th>
+                                <th class="text-center top">Second Period</th>
+                                <th class="text-center top">Third Period</th>
+                                <th class="text-center top">Fourht Period</th>
+                                <th class="text-center top">Fifth Period</th>
+                                <th class="text-center top">Sixth Period</th>
+                                <th class="text-center top">Seventh Period</th>
+                                <th class="text-center top">Eighth Period</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <t t-set="count" t-value="0"/>
+                              <tr t-if="docs.timetable_sat">
+                                <th scope="row">
+                                        <b>Saturday</b>
+                                    </th>
+                                      <td t-foreach="docs.timetable_sat" t-as="sat">
+                                     <span t-esc="sat.subject.name"/>
+                                     <t t-set="count" t-value="count+1"/>
+                                 </td>
+                                 <td t-if="count&lt;8" t-foreach="8-count" t-as="co">
+                                 <!-- <td t-if="count&lt;8" t-foreach="8-count" t-as=""> -->
+                                   
+                                 </td>
+                                </tr>
+                                <t t-set="count" t-value="0"/>
+                              <tr >
+                                <th scope="row"> 
+                                    <b>Sunday</b>
+                                 </th>
+                                 <td t-foreach="docs.timetable_sun" t-as="sun">
+                                     <span t-esc="sun.subject.name"/>
+                                  <t t-set="count" t-value="count+1"/>
+                                 </td>
+                                 <td t-if="count&lt;8" t-foreach="8-count" t-as="co">
+                                 <!-- <td t-if="count&lt;8" t-foreach="8-count" t-as=""> -->
+                                   
+                                 </td>
+                                </tr>
+                                <t t-set="count" t-value="0"/>
+                     
+                             <tr >
+                                <th scope="row">
+                                     <b>Monday</b>
+                                </th>
+                                  <td t-foreach="docs.timetable_mon" t-as="mon">
+                                     <span t-esc="mon.subject.name"/>
+                                    <t t-set="count" t-value="count+1"/>
+                                 </td>
+                                 <td t-if="count&lt;8" t-foreach="8-count" t-as="co">
+                                 <!-- <td t-if="count&lt;8" t-foreach="8-count" t-as=""> -->
+                                   
+                                 </td>
+                                </tr>
+                                <t t-set="count" t-value="0"/>
+                             <tr>
+                                 <th scope="row">
+                                     <b>Tuesday</b>
+                                 </th>
+                                 <td t-foreach="docs.timetable_tue" t-as="tue">
+                                     <span t-esc="tue.subject.name"/>
+                                    <t t-set="count" t-value="count+1"/>
+                                 </td>
+                                 <td t-if="count&lt;8" t-foreach="8-count" t-as="co">
+                                 <!-- <td t-if="count&lt;8" t-foreach="8-count" t-as=""> -->
+                                   
+                                 </td>
+                                </tr>
+                                <t t-set="count" t-value="0"/>
+                                <tr>
+                                    <th scope="row">
+                                        <b>Wednesday</b>
+                                     </th>
+                                     <td t-foreach="docs.timetable_wed" t-as="wed">
+                                     <span t-esc="wed.subject.name"/>
+                                    <t t-set="count" t-value="count+1"/>
+                                 </td>
+                                 <td t-if="count&lt;8" t-foreach="8-count" t-as="co">
+                                 <!-- <td t-if="count&lt;8" t-foreach="8-count" t-as=""> -->
+                                   
+                                 </td>
+                                </tr>
+                                <t t-set="count" t-value="0"/>
+                                <tr>
+                                 <th scope="row">
+                                     <b>Thursday</b>
+                                </th>
+                                <td t-foreach="docs.timetable_thur" t-as="thur">
+                                     <span t-esc="thur.subject.name"/>
+                                    <t t-set="count" t-value="count+1"/>
+                                 </td>
+                                 <td t-if="count&lt;8" t-foreach="8-count" t-as="co">
+                                 <!-- <td t-if="count&lt;8" t-foreach="8-count" t-as=""> -->
+                                   
+                                 </td>
+                                </tr>
+                                <t t-set="count" t-value="0"/>
+                            <tr t-if="docs.timetable_fri">
+                            <th scope="row">
+                                <b>Friday</b>
+                            </th>
+                            <td t-foreach="docs.timetable_fri" t-as="fri">
+                                     <span t-esc="fri.subject.name"/>
+                                    <t t-set="count" t-value="count+1"/>
+                                 </td>
+                                 <td t-if="count&lt;8" t-foreach="8-count" t-as="co">
+                                 <!-- <td t-if="count&lt;8" t-foreach="8-count" t-as=""> -->
+                                   
+                                 </td>
+                                </tr>
+                                <t t-set="count" t-value="0"/>
+                          
+                          </tbody>
+                      </table>
+                         <div class="oe_structure"/>
+
+                </div>
+
+
+        </t>
+
+    </t>
+
+    </template>
+
+           <report
+
+                id="report_timetable"
+
+                model="education.timetable"
+
+                string="Time Table"
+
+                report_type="qweb-pdf"
+
+                name="education_time_table.report_timetable_template"
+
+                file="education_time_table.report_timetable_template"
+
+                menu="True"
+
+        />
+
+    </data>
+
+</odoo>
